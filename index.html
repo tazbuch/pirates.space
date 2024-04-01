@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pirates space</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:ital,wght@0,400;0,700;1,400&display=swap">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wrath.lol/media/background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            margin-top: 20px;
+            max-width: 300px; /* Adjusted size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the "wrath." text */
+        .wrath-text {
+            color: white;
+        }
+
+        /* Style for the pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        /* Style for the close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://github.com/tazbuch/tazbuch.github.io/blob/main/media/pirates.spacetext.png?raw=true" alt="Wrath Games" class="logo">
+        <h2 class="wrath-text" style="font-family: 'Pro Black Oblique Helvetica', sans-serif;">pirates space</h2>
+        <div class="divider"></div>
+        <button class="btn" onclick="showPopup('popup1')">Movie webites</button>
+        <button class="btn" onclick="showPopup('popup2')">Download ROMS for emulators websites</button>
+        <button class="btn" onclick="showPopup('popup3')">Emulators</button>
+        <div id="popup1" class="popup">
+            <button class="close-btn" onclick="hidePopup('popup1')">X</button>
+            <h3>Free Movies Websites</h3>
+            <a class="btn" href="https://nyafilmer.gg/" target="_blank">nyafilmer.gg</a>
+          <a class="btn" href="https://andyday.tv/home" target="_blank">andyday.tv</a>
+          <a class="btn" href="https://soap2day.ph/" target="_blank">soap2day</a>
+        </div>
+        <div id="popup2" class="popup">
+            <button class="close-btn" onclick="hidePopup('popup2')">X</button>
+            <h3>Websites for downloading ROMs</h3>
+            <a class="btn" href="https://vimm.net/" target="_blank">vimm's lair</a>
+          <a class="btn" href="https://myrient.erista.me/files/Redump/Nintendo%20-%20Wii%20-%20NKit%20RVZ%20[zstd-19-128k]/" target="_blank">wii roms</a>
+          <a class="btn" href="https://www.emulatorgames.net/" target="_blank">emulator games</a>
+          <a class="btn" href="https://myrient.erista.me/files/Redump/Microsoft%20-%20Xbox%20360/" target="_blank">xbox 360 roms</a>
+        </div>
+        <div id="popup3" class="popup">
+            <button class="close-btn" onclick="hidePopup('popup3')">X</button>
+            <h3>Emulators</h3>
+            <p>use these to run the ROMS</p>
+           <a class="btn" href="https://stella-emu.github.io/downloads.html" target="_blank">Atari 2600</a>
+           <a class="btn" href="https://www.duckstation.org/" target="_blank">PlayStation1</a>
+           <a class="btn" href="https://simple64.github.io/" target="_blank">Nintendo 64</a>
+           <a class="btn" href="https://pcsx2.net/downloads/" target="_blank">PlayStation 2</a>
+           <a class="btn" href="https://dolphin-emu.org/download/?ref=btn" target="_blank">GameCube/WII</a>
+           <a class="btn" href="https://xemu.app/docs/download/" target="_blank">Xbox (Orignal)</a>
+           <a class="btn" href="https://xenia.jp/download/" target="_blank">Xenia</a>
+           <a class="btn" href="https://rpcs3.net/" target="_blank">PlayStation 3</a>
+           <a class="btn" href="https://mgba.io/downloads.html" target="_blank">Game Boy orginal/color/Advance</a>
+          <a class="btn" href="https://melonds.kuribo64.net/downloads.php" target="_blank">Nintendo DS</a>
+          <a class="btn" href="https://bsnes.org/download/" target="_blank">Super Nintendo</a>
+          <a class="btn" href="https://7800.8bitdev.org/index.php/A7800_Emulator" target="_blank">Atari 7800</a>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = "block";
+        }
+
+        function hidePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
